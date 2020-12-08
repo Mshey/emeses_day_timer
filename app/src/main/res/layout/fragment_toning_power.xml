@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingStart="32dp"
+    android:paddingEnd="32dp">
+
+    <ImageView
+        android:id="@+id/toning_power_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/toning_power"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/round_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/round"
+        app:layout_constraintBottom_toTopOf="@id/simple_line1"
+        app:layout_constraintStart_toStartOf="@id/simple_line1"
+        app:layout_constraintTop_toBottomOf="@id/toning_power_image" />
+
+    <TextView
+        android:id="@+id/round_numbers_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="1/6"
+        app:layout_constraintBottom_toTopOf="@id/simple_line1"
+        app:layout_constraintEnd_toEndOf="@id/simple_line1" />
+
+    <View
+        android:id="@+id/simple_line1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/round_text_view" />
+
+    <TextView
+        android:id="@+id/exercise_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/exercise"
+        app:layout_constraintStart_toStartOf="@id/simple_line1"
+        app:layout_constraintTop_toBottomOf="@id/simple_line1" />
+
+    <TextView
+        android:id="@+id/exercise_numbers_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1/7"
+        app:layout_constraintEnd_toEndOf="@id/simple_line1"
+        app:layout_constraintTop_toBottomOf="@id/simple_line1" />
+
+    <include
+        android:id="@+id/included_timer_counter_layout"
+        layout="@layout/timer_counter_layout" />
+
+   <View
+        android:id="@+id/simple_line2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="20dp"
+        android:background="@android:color/black"
+        app:layout_constraintBottom_toTopOf="@id/emese_s_day"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/emese_s_day"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="@string/e_m_e_s_e_s_d_a_y"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

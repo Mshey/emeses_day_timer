@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/mobile_navigation"
+    app:startDestination="@id/menuFragment">
+
+    <fragment
+        android:id="@+id/sweatyShredderTimerFragment"
+        android:name="com.example.mysezzytimer.SweatyShredderFragment"
+        android:label="SweatyShredderTimerFragment" />
+    <fragment
+        android:id="@+id/toningPowerFragment"
+        android:name="com.example.mysezzytimer.ToningPowerFragment"
+        android:label="ToningPowerFragment" />
+    <fragment
+        android:id="@+id/menuFragment"
+        android:name="com.example.mysezzytimer.MenuFragment"
+        android:label="MenuFragment" >
+        <action
+            android:id="@+id/action_menuFragment_to_sweatyShredderTimerFragment"
+            app:destination="@id/sweatyShredderTimerFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_toningPowerFragment"
+            app:destination="@id/toningPowerFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_blasterFragment"
+            app:destination="@id/blasterFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/blasterFragment"
+        android:name="com.example.mysezzytimer.BlasterFragment"
+        android:label="BlasterFragment" />
+</navigation>

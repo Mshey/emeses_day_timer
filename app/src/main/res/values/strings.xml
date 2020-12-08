@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">MySezzyTimer</string>
+    <string name="round">Round</string>
+    <string name="exercise">Exercise</string>
+    <string name="e_m_e_s_e_s_d_a_y">E M E S E \' S D A Y</string>
+    <string name="get_ready">GET READY</string>
+    <string name="rest">Rest!</string>
+    <string name="go">Go!</string>
+
+    <string name="file_name">ringtone</string>
+</resources>
